@@ -4,7 +4,8 @@
 
 ####Dollar per Euro####
 
-df = read.csv("Documents/EXUSEU.csv") # identify your path to obtain document. Name it df.
+url = "https://raw.githubusercontent.com/kad407/Econometrics-II/73a10a49a5d7d5d07d84761c38bc26ef969003d0/EXUSEU.csv"
+df = read.csv(url) # identify your path to obtain document. Name it df.
 tail(df)
 install.packages("rugarch")
 library(rugarch)
