@@ -73,7 +73,7 @@ library(tseries)
 length(e)
 time = c(1:308)
 BP = breakpoints(e ~ time, h = 46) # rule of thumb --> 15% of the number of observations
-BP 3 # structural break occurred December 1st, 2003 --> So there being a structural break may explain why the Box-Ljung Test is inconsistent with stationarity...
+BP # structural break occurred December 1st, 2003 --> So there being a structural break may explain why the Box-Ljung Test is inconsistent with stationarity...
 
 coef(BP)
 
